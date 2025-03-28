@@ -1,0 +1,501 @@
+/*Estilos generales*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+  
+.contenedor{
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+  
+.titulo-seccion{
+    text-align: center;
+    margin-bottom: 40px;
+}
+  
+.titulo-seccion h2{
+    color: #2a6332;
+    font-size: 3.125rem;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+  
+.titulo-seccion p{
+    color: #979797;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/*Boton Volver Arriba*/
+.btn-volver-arriba{
+    display:inline-block;
+    width: 40px;
+    height: 40px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 30%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99999;
+    margin-right: -60px;
+    transition: all .4s ease;
+}
+  
+.btn-volver-arriba a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 30%;
+    text-align: center;
+}
+  
+.btn-volver-arriba a i{
+    font-size: 1rem;
+    color: #fff;
+    line-height: 40px;
+}
+
+/* ------ ENCABEZADO ------ */
+
+.menu-bar-pc{
+    width: 100%;
+    min-height: 68px;
+    border-bottom: 1px solid rgba(255,255,255, 0.15);
+    padding: 0 36px;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+  
+.logo{
+    display: inline-block;
+    width: 50px;
+}
+  
+.logo img{
+    width: 100%;
+    vertical-align: top;
+    border: 2px solid #456d4a;
+    border-radius: 10%;
+}
+  
+.menu-principal a, .top-redes a{
+    display: inline-block;
+    padding: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.876rem;
+    letter-spacing: 0;
+    line-height: 1.5em;
+    transition: all .3s ease;
+}
+  
+.menu-principal a:last-child, .top-redes a:last-child{
+    padding-right: 0;
+}
+  
+.top-redes a i{
+    font-size: 1rem;
+}
+  
+.menu-principal a:hover, .top-redes a:hover{
+    color: #2a6332;
+}
+  
+.fixed-header{
+    width: 100%;
+    min-height: 68px;
+    border-bottom: 1px solid rgba(204,204,204,0.5);
+    padding: 0 36px;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    transition: all .4s ease;
+    margin-top: -68px;
+}
+  
+.fixed-header .menu-principal a, .fixed-header .top-redes a{
+    color: #444444;
+}
+  
+.fixed-header .menu-principal a:hover, .top-redes a:hover{
+    color: #2a6332;
+}
+  
+  /*Mobile menu*/
+.menu-mobile{
+    display: none;
+}
+
+/* ------ MAIN ------ */
+
+/*Banner principal*/
+
+.main{
+    width: 100%;
+    margin-top: -68px;
+}
+  
+.main .banner-principal{
+    width: 100%;
+    position: relative;
+}
+  
+.main .banner-principal .banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+  
+.main .banner-principal .texto-banner{
+    display: inline-block;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+  
+.main .banner-principal .texto-banner h3{
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 20px;
+}
+  
+.main .banner-principal .texto-banner h1{
+    font-size: 6.0625rem;
+    font-weight: 700;
+    line-height: 90px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+  
+.main .banner-principal .texto-banner a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 20px;
+    background: #2a6332;
+    color: #fff;
+    transition: all .7s ease;
+}
+  
+.main .banner-principal .texto-banner a:hover{
+    background: #fff;
+    color: #0089E0;
+}
+
+/*Historia*/
+
+.main .historia{
+    background: #F3F4FA;
+}
+  
+.main .historia .contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+  
+.main .historia .contenedor .titulo-seccion{
+    width: 30%;
+    text-align: left;
+}
+  
+.main .historia .contenedor .titulo-seccion h2{
+    margin-bottom: 0;
+}
+  
+.main .historia .texto-historia{
+    width: 66.66%;
+    text-align: left;
+    justify-content: baseline;
+}
+  
+.main .historia .texto-historia p{
+    color: black;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: justify;
+}
+
+/*Slider Sitios Turisticos*/
+
+.main .contenedor-slider{
+    width: 100%;
+    overflow: hidden;
+    background: #F3F4FA;
+    padding: 54px 0;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+}
+  
+.main .contenedor-slider .slider{
+    width: 400%;
+    display: flex;
+}
+  
+.main .contenedor-slider .slider .slide{
+    width: 15%;
+    max-width: 950px;
+    margin-right: 0.7%;
+    box-shadow: 0px 20px 40px #aaa;
+}
+  
+  .main .contenedor-slider .slider .slide img{
+    width: 100%;
+    vertical-align: top;
+}
+  
+.main .contenedor-slider .btn-anterior, .main .contenedor-slider .btn-siguiente{
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+}
+  
+.main .contenedor-slider .btn-anterior{
+    left: 2%;
+}
+  
+.main .contenedor-slider .btn-siguiente{
+    right: 2%;
+}
+  
+.main .contenedor-slider .btn-anterior i, .main .contenedor-slider .btn-siguiente i{
+    color: #fff;
+}
+  
+.main .contenedor-slider .btn-anterior i:hover, .main .contenedor-slider .btn-siguiente i:hover{
+    color: #0089E0;
+}
+
+/*Comida Tipica*/
+
+.main .comidas{
+    background: #F3F4FA;
+    padding: 108px 0 54px 0;
+}
+
+.contenedor{
+    margin-top: 0;
+}
+  
+.main .comidas .galeria-comida{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 34px;
+    border-bottom: 1px solid #ccc;
+}
+  
+.main .comidas .galeria-comida .comidas{
+    width: 25%;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+  
+.main .comidas .galeria-comida .comidas img{
+    width: 100%;
+    vertical-align: top;
+}
+
+/*Modal Comida Tipica*/
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 9999999999;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.modal img{
+    width: 90%;
+    max-width: 600px;
+}
+  
+.modal .btn-cerrar{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    right: 20px;
+    background: #0089E0;
+    text-align: center;
+    cursor: pointer;
+}
+  
+.modal .btn-cerrar i{
+    color: #fff;
+    font-size: 1rem;
+    line-height: 50px;
+}
+
+/*Semana Santa*/
+
+.main .semana-santa{
+    background: #494646;
+    padding: 30px 0;
+}
+  
+.main .semana-santa .contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+  
+.main .semana-santa .contenedor .semana{
+    width: 50%;
+}
+  
+.main .semana-santa .contenedor .semana .contenido-info-semana{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+  
+.main .semana-santa .contenedor .semana .contenido-info-semana:first-child{
+    margin-bottom: 30px;
+}
+  
+.main .semana-santa .contenedor .semana .contenido-info-semana .texto-info-semana{
+    margin-left: 3%;
+}
+  
+.main .semana-santa .contenedor .semana .contenido-info-semana .texto-info-semana h4{
+    font-size: 1.875rem;
+    line-height: 24px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+    margin-right: 10%;
+}
+  
+.main .semana-santa .contenedor .semana .contenido-info-semana .texto-info-semana p{
+    color: #979797;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: justify;
+    margin-right: 10%;
+}
+  
+.main .semana-santa .contenedor .foto-semana{
+    width: 50%;
+    height: 300px;
+    box-shadow: 0px 9px 32px -1px rgba(0,0,0,0.5);
+    background-image: url('../img/semana-santa.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+/*Ubicacion*/
+
+.main .ubicacion{
+    background: #F3F4FA;
+    padding-top: 54px;
+    padding-bottom: 54px;
+}
+  
+.main .ubicacion .contenedor{
+    background: #fff;
+    padding: 40px;
+    width: 300%;
+    max-width: 500px;
+    box-shadow: 0px 9px 32px -1px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/*Pie de pagina*/
+
+footer{
+    background: #62c295;
+    padding: 54px 0;
+    text-align: center;
+}
+  
+footer .copy{
+    color: #000000;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+  
+footer .footer-redes a{
+    display: inline-block;
+    padding: 0 10px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.875rem;
+    letter-spacing: 0;
+    line-height: 1.5em;
+    transition: all .3s ease;
+}
+  
+  footer .footer-redes a:hover{
+    color: #2a6332;
+}
+  
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .menu-bar-pc {
+      display: none; /* Oculta el menú de escritorio */
+    }
+    .menu-mobile {
+      display: block; /* Muestra el menú móvil */
+    }
+    .mapa iframe{
+      width: 90%;
+    }
+    .galeria-comida{
+      grid-template-columns: 1fr;
+    }
+}
+  
+/* Estilos para pantallas medianas (tabletas) */
+@media (min-width: 769px) and (max-width: 1024px) {}
+  
+/* Estilos para pantallas grandes (escritorio) */
+@media (min-width: 1025px) {
+    /* Ajustes específicos para escritorio */
+    .menu-mobile {
+      display: none;
+    }
+    .menu-bar-pc {
+      display: flex;
+    }
+}
